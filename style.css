@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.press-logo__container {
+  background-color: pink;
+}
+
+.splide__slide {
+  opacity: 0.4;
+}
+
+.press-logo__quote-wrap {
+  padding: 30px;
+}
+
+.press-logo__quote {
+ font-size: 32px;
+ text-align: center;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.is-active {
+  opacity: 1;
+}
