@@ -21,11 +21,18 @@ function slider() {
       drag   : false,
       focus    : 'center',
       gap       : 30,
-      // arrows     : false,
+      autoplay : true,
+      updateOnMove: true,
       pagination: false,
-      autoScroll: {
-        speed: 0.6,
-      },
+      breakpoints: {
+        767: {
+          fixedHeight : '40px',
+          gap       : 15,
+          autoScroll: {
+            speed: 0.4,
+          }
+        },
+      }
     } );
     main.sync( autoSlide );
     main.mount();

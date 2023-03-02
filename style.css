@@ -4,15 +4,29 @@
 }
 
 .press-logo__container {
-  background-color: pink;
+  background-color: rgb(238, 193, 200);
 }
 
 .splide__slide {
-  opacity: 0.4;
+  opacity: 0.5;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .press-logo__quote-wrap {
   padding: 30px;
+  opacity: 1;
+  transition: all 0.4s !important ;
+}
+
+@media screen and (max-width: 767px) {
+  .press-logo__quote-wrap {
+    padding: 15px;
+  }
 }
 
 .press-logo__quote {
@@ -24,6 +38,25 @@
  justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .press-logo__quote {
+    font-size: 20px;
+   }
+}
+
 .is-active {
   opacity: 1;
+  transition: opacity 1s ease !important;
+}
+
+@media screen and (max-width: 767px) {
+  .splide__arrow {
+    width: 15px;
+    height: 15px;
+  }
+
+  .splide__arrow svg {
+    width: 10px;
+    height: 10px;
+  }
 }
